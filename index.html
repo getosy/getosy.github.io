@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Osy Client</title>
+    <link rel="icon" href="assets/exec.ico" type="image/x-icon">
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your App Name</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Osy Client">
+    <meta property="og:description" content="One of the great exploit executors out there!">
+    <meta property="og:image" content="https://getosy.github.io/assets/exec.png">
+    <meta property="og:url" content="https://getosy.github.io">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Osy Client">
+    <meta name="twitter:description" content="One of the great exploit executors out there!">
+    <meta name="twitter:image" content="https://getosy.github.io/assets/exec.png">
+    <meta name="twitter:url" content="https://getosy.github.io">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/exec.ico">
+    <style>
+        /* Importing Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Flexbox layout for features */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .features h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            flex: 1 1 30%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Screenshots Section */
+        .screenshots {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .screenshots h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .screenshots img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .screenshots img:hover {
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Download Section */
+        .download {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .download h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .download a {
+            font-size: 1.2rem;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .download a:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Osy Client</h1>
+        <p>One of the great exploit executors out there!</p>
+    </header>
+
+    <div class="container">
+        <section class="features">
+            <h2>App Features</h2>
+            <div class="feature-item">
+                <h3>UNC Percentage</h3>
+                <p>Currently we have 70% UNC</p>
+            </div>
+            <div class="feature-item">
+                <h3>Smooth UI</h3>
+                <p>we have smooth great UI and a great Script Hub</p>
+            </div>
+            <div class="feature-item">
+                <h3>We use Monaco</h3>
+                <p>We use Monaco for highlight texts and it has smooth coding experience</p>
+            </div>
+        </section>
+
+        <section class="screenshots">
+            <h2>App Screenshots</h2>
+            <img src="assets/UI.png" alt="UI">
+        </section>
+
+<section class="download">
+    <h2>Links</h2>
+    <a href="https://link-target.net/854704/osy-dosy-in-bosy" target="_blank">Download</a>
+    <a href="https://dsc.gg/getosy" target="_blank" class="discord-btn">Join our Community</a>
+</section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Osy Client. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
