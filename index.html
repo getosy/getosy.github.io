@@ -4,36 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Osy Client</title>
+    <title>Osy Client - Leading Exploit Executor</title>
     <link rel="icon" href="assets/exec.ico" type="image/x-icon">
     
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your App Name</title>
-
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Osy Client">
-    <meta property="og:description" content="One of the great exploit executors out there!">
+    <meta property="og:title" content="Osy Client - Leading Exploit Executor">
+    <meta property="og:description" content="Experience top-tier exploit execution and a sleek interface. Join our community!">
     <meta property="og:image" content="https://getosy.github.io/assets/exec.png">
     <meta property="og:url" content="https://getosy.github.io">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Osy Client">
-    <meta name="twitter:description" content="One of the great exploit executors out there!">
+    <meta name="twitter:title" content="Osy Client - Leading Exploit Executor">
+    <meta name="twitter:description" content="Experience top-tier exploit execution and a sleek interface. Join our community!">
     <meta name="twitter:image" content="https://getosy.github.io/assets/exec.png">
     <meta name="twitter:url" content="https://getosy.github.io">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/exec.ico">
-    <style>
-        /* Importing Google Fonts */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-        /* Reset some default browser styles */
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+
+    <!-- Styles -->
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -42,149 +34,127 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f4f5f7;
             color: #333;
-            line-height: 1.6;
         }
 
         header {
-            background-color: #007bff;
+            background: linear-gradient(135deg, #007bff, #4a90e2);
             color: white;
             padding: 60px 0;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 10px;
+            font-weight: 700;
         }
 
         header p {
             font-size: 1.2rem;
+            font-weight: 300;
         }
 
         .container {
-            width: 85%;
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
-        }
-
-        /* Flexbox layout for features */
-        .features {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .features h2 {
-            width: 100%;
             text-align: center;
-            font-size: 2rem;
+        }
+
+        .features, .screenshots, .download {
+            margin-bottom: 60px;
+        }
+
+        .features h2, .screenshots h2, .download h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
             margin-bottom: 40px;
+            color: #333;
         }
 
         .feature-item {
-            flex: 1 1 30%;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .feature-item:hover {
             transform: translateY(-10px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
         }
 
         .feature-item h3 {
             font-size: 1.5rem;
-            margin-bottom: 15px;
             color: #007bff;
+            font-weight: 600;
+            margin-bottom: 15px;
         }
 
         .feature-item p {
             font-size: 1rem;
             color: #666;
+            line-height: 1.6;
         }
 
-        /* Screenshots Section */
-        .screenshots {
-            margin-bottom: 50px;
-            text-align: center;
-        }
-
-        .screenshots h2 {
-            font-size: 2rem;
-            margin-bottom: 40px;
+        .features .feature-item {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            text-align: left;
         }
 
         .screenshots img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-            margin: 20px;
+            width: 320px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
             transition: box-shadow 0.3s ease;
+            margin: 20px;
         }
 
         .screenshots img:hover {
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Download Section */
-        .download {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .download h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
         .download a {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             background-color: #007bff;
             color: white;
-            padding: 15px 30px;
+            padding: 15px 35px;
             text-decoration: none;
-            border-radius: 30px;
+            border-radius: 50px;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin: 10px;
         }
 
         .download a:hover {
             background-color: #0056b3;
             transform: translateY(-5px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
         }
 
-        /* Footer */
         footer {
             background-color: #333;
-            color: white;
-            text-align: center;
+            color: #f4f5f7;
             padding: 20px 0;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer p {
+            text-align: center;
             font-size: 1rem;
+            box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.1);
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
-            .features {
-                flex-direction: column;
-                align-items: center;
+            .features .feature-item {
+                width: 100%;
             }
 
-            .feature-item {
-                width: 100%;
-                margin-bottom: 20px;
+            .screenshots img {
+                width: 80%;
             }
         }
     </style>
@@ -193,36 +163,39 @@
 
     <header>
         <h1>Welcome to Osy Client</h1>
-        <p>One of the great exploit executors out there!</p>
+        <p>Discover a smooth, powerful exploit execution experience.</p>
     </header>
 
     <div class="container">
+        <!-- Features Section -->
         <section class="features">
-            <h2>App Features</h2>
+            <h2>Why Choose Osy Client?</h2>
             <div class="feature-item">
-                <h3>UNC Percentage</h3>
-                <p>Currently we have 70% UNC</p>
+                <h3>High UNC Percentage</h3>
+                <p>Achieve impressive 70% UNC, ensuring reliability and performance.</p>
             </div>
             <div class="feature-item">
-                <h3>Smooth UI</h3>
-                <p>we have smooth great UI and a great Script Hub</p>
+                <h3>Smooth UI Experience</h3>
+                <p>Navigate an intuitive interface with a comprehensive script hub.</p>
             </div>
             <div class="feature-item">
-                <h3>We use Monaco</h3>
-                <p>We use Monaco for highlight texts and it has smooth coding experience</p>
+                <h3>Enhanced Coding with Monaco</h3>
+                <p>Monaco integration provides a refined code highlighting and editing experience.</p>
             </div>
         </section>
 
+        <!-- Screenshots Section -->
         <section class="screenshots">
             <h2>App Screenshots</h2>
-            <img src="assets/GUI.png" alt="UI">
+            <img src="assets/GUI.png" alt="User Interface Screenshot">
         </section>
 
-<section class="download">
-    <h2>Links</h2>
-    <a href="https://link-target.net/854704/sentinel-remake-bootstrap" target="_blank">Download</a>
-    <a href="https://dsc.gg/getosy" target="_blank" class="discord-btn">Join our Community</a>
-</section>
+        <!-- Download Section -->
+        <section class="download">
+            <h2>Get Started</h2>
+            <a href="https://link-target.net/854704/sentinel-remake-bootstrap" target="_blank">Download Now</a>
+            <a href="https://dsc.gg/getosy" target="_blank">Join Our Community</a>
+        </section>
     </div>
 
     <footer>
