@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+    <style>
+        /* Place your CSS here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ header_title }}</h1>
+        <p>{{ header_subtitle }}</p>
+        <div class="cta-buttons">
+            <a href="{{ download_url }}" target="_blank">Download</a>
+            <a href="{{ community_url }}" target="_blank">Join Community</a>
+        </div>
+    </header>
+    <section class="features">
+        {% for feature in features %}
+        <div class="feature-card">
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+        </div>
+        {% endfor %}
+    </section>
+    <section class="screenshots">
+        <h2>App Screenshots</h2>
+        <img src="{{ screenshot_url }}" alt="App Screenshot">
+    </section>
+    <footer>
+        <p>&copy; 2024 Osy Client. All rights reserved.</p>
+    </footer>
+</body>
+</html>
