@@ -1,0 +1,9 @@
+use rocket::fs::{FileServer, relative};
+
+#[launch]
+fn rocket() -> _ {
+    rocket::build()
+        .attach(Template::fairing())
+        .mount("/", routes![index])
+        .mount("/public", FileServer::from(relative!("public")))
+}
