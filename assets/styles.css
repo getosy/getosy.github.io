@@ -1,9 +1,98 @@
-use rocket::fs::{FileServer, relative};
-
-#[launch]
-fn rocket() -> _ {
-    rocket::build()
-        .attach(Template::fairing())
-        .mount("/", routes![index])
-        .mount("/public", FileServer::from(relative!("public")))
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #222);
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0 30px;
+    color: #aaa;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons a {
+    font-size: 1.2rem;
+    background: #5cb3ff;
+    color: #ffffff;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(92, 179, 255, 0.4);
+}
+
+.cta-buttons a:hover {
+    background-color: #4a9edf;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(74, 158, 223, 0.6);
+}
+
+.features {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 280px;
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h3 {
+    font-size: 1.6rem;
+    color: #5cb3ff;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.screenshots {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.screenshots img {
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0
