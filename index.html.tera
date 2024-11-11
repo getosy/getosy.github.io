@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
-    <style>
-        /* Place your CSS here */
-    </style>
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
     <header>
@@ -18,6 +16,7 @@
             <a href="{{ community_url }}" target="_blank">Join Community</a>
         </div>
     </header>
+
     <section class="features">
         {% for feature in features %}
         <div class="feature-card">
@@ -26,10 +25,12 @@
         </div>
         {% endfor %}
     </section>
+
     <section class="screenshots">
         <h2>App Screenshots</h2>
         <img src="{{ screenshot_url }}" alt="App Screenshot">
     </section>
+
     <footer>
         <p>&copy; 2024 Osy Client. All rights reserved.</p>
     </footer>
